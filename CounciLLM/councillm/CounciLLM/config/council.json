@@ -1,0 +1,58 @@
+{
+  "frontend_dir": "../frontend",
+  "runtime": {
+    "startup_timeout_seconds": 180,
+    "request_timeout_seconds": 180,
+    "port_seed": 28100,
+    "extra_args": [
+      "--jinja"
+    ]
+  },
+  "models": [
+    {
+      "id": "qwen3-router",
+      "role": "router",
+      "display_name": "Qwen3 Router",
+      "alias": "qwen3-router",
+      "path": "../../../../models/qwen3-router/Qwen3-1.7B-Q6_K.gguf",
+      "ctx_size": 4096,
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "notes": "Local router model for intent classification and council selection."
+    },
+    {
+      "id": "qwen3-general",
+      "role": "general",
+      "display_name": "Qwen3 General",
+      "alias": "qwen3-general",
+      "path": "../../../../models/qwen3-general/Qwen3-4B-Q4_K_M.gguf",
+      "ctx_size": 4096,
+      "max_tokens": 1536,
+      "temperature": 0.4,
+      "notes": "General-purpose local model."
+    },
+    {
+      "id": "granite-coding",
+      "role": "coding",
+      "display_name": "Granite Coding",
+      "alias": "granite-coding",
+      "path": "../../../../models/granite-coding/granite-4.1-3b-q4_k_m.gguf",
+      "ctx_size": 4096,
+      "max_tokens": 2048,
+      "temperature": 0.2,
+      "notes": "Coding-specialist local model."
+    },
+    {
+      "id": "qwen3-vision",
+      "role": "vision",
+      "display_name": "Qwen3 Vision",
+      "alias": "qwen3-vision",
+      "path": "../../../../models/qwen3-vision/Qwen3-VL-4B-Instruct-Q4_K_M.gguf",
+      "mmproj": "../../../../models/qwen3-vision/mmproj-Qwen3-VL-4B-Instruct-F16.gguf",
+      "ctx_size": 4096,
+      "max_tokens": 1536,
+      "temperature": 0.2,
+      "notes": "Vision-capable local model with its projector."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+# === CounciLLM .gitignore ===
+
+# Model files (GGUF files exceed GitHub 100MB limit)
+models/
+*.gguf
+
+# Standalone runtime binaries
+runtime/
+*.zip
+*.exe
+*.dll
+
+# Logs & temporary files
+logs/
+*.log
+*.log.*
+*.tmp
+*.bak
+server-test.log
+server-test.log.err
+run-server-tmp.bat
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# User data & session history (preserves privacy)
+CounciLLM/councillm/CounciLLM/work/projects/
+CounciLLM/councillm/CounciLLM/attachments/
+CounciLLM/councillm/CounciLLM/artifacts/
+
+# OS specific
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+
+# Node.js dependencies
+node_modules/
+.env

@@ -1,0 +1,5 @@
+{
+  "name": "CounciLLM - Sovereign Local AI",
+  "description": "An offline, multi-model AI council that routes general reasoning, coding, and visual tasks across specialized local models.",
+  "requestFramePermissions": []
+}

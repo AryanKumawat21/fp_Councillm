@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "name": "Local Admin",
+    "instructions": "You are an expert, air-gapped sovereign AI assistant. Do not assume internet connectivity.",
+    "font": "serif",
+    "theme": "dark",
+    "language": "English"
+  },
+  "projects": [
+    {
+      "id": "workspace",
+      "name": "CounciLLM Workspace",
+      "path": ".",
+      "created_at": "2026-08-28T19:04:45.097364+00:00"
+    }
+  ],
+  "active_project_id": "workspace",
+  "sessions": []
+}
